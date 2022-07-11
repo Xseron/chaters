@@ -1,0 +1,14 @@
+all recuests 
+{
+  user_id string
+  type string
+  {added}
+}
+type client_msg:
+  geter_id int
+  client_msg string
+
+type room_msg:
+  room_id int
+  room_msg string
+  

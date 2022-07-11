@@ -1,0 +1,19 @@
+table_connection:
+  sender_id:		foreign key from table_users(user_id)
+  getter_id:		foreign key from table_users(user_id)
+  message_id:		foreign key from table_messages
+  room_id:		foreign key from table_rooms
+table_users:
+  user_id               primary key
+  user_name 		string
+  passwor 		string in hash
+table_rooms
+  room_id 		primary key
+  room_name 		string
+  users_id 		array of foreign key from table users(user_id)
+table_messages:
+  message_id 		primary key
+  type 			string("PHOTO","STR","VIDIO")
+  value 		string
+  is_sent 		bool
+  

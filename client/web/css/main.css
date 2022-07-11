@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #0f2027;
+    background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+}
+.fix{
+    margin-top: 10px;
+}
+.content{
+    display: grid;
+    grid-template-columns: minmax(250px, 20vw) minmax(500px,80vw);
+    grid-template-rows: minmax(100px,12vh) 88vh;
+}
+#userData{
+    background-color: white;
+    min-height: 100px;
+    min-width: 250px;
+    grid-row: 1;
+    grid-column: 1;
+}
+.avatar{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user__img__name{
+    display: flex;
+    align-content: space-between;
+}
+.username{
+    font-family: 'cursive';
+    font-size: 1.2rem;
+    text-align: center;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 12px;
+}
+#friendList{
+    min-width: 250px;
+    grid-row: 2;
+    grid-column: 1;
+    background-color: #D6D6E7;
+    overflow: auto ;
+}
+.friend{
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 80px;
+}
+.miniName{
+    font-size: 1.2rem;
+}
+.line{
+    background-color: darkgrey;
+    margin-left: auto;
+    margin-right: 0;
+    width: 80%;
+    height: 2px;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+#main{
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100vh;
+    min-width: 20vh;
+}
+#bottom_bar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+#messages{
+    overflow: auto;
+    max-height: 86vh;
+}
+.message{
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    background:#36395A;
+    border-radius: 10px;
+    max-width: 500px;
+    max-height: 500px;
+}
+.to{
+    margin-right: 0;
+    margin-left: auto;
+}
+.main_bar{
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    height: 7vh;
+}
+.bar{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.bar p{
+    padding: 28px 16px;
+}
+.bar img{
+    height: 5vh;
+    width: 5vh;
+    padding: 7px 8px;
+    border-radius: 50%;
+}
+.right{
+    margin-left: auto;
+    margin-right: 0;
+}
+.barline{
+    width: 5px;
+    height: 7vh;
+    background-color: darkgrey;
+}
+.inp{
+    flex: 1;
+}
+.form__input {
+    flex: 1;
+    color: #333;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 95%;
+    height: 5vh;
+    margin: 0.8vh 8px;
+    padding: 0.1vh;
+}
+
+/*.bar:hover {*/
+/*    background-color: #111;*/
+/*}*/
